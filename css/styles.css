@@ -303,6 +303,18 @@ header .navbar a:hover {
     .home .content p {
         font-size: 1.5rem;
     }
+
+    .about .row .content {
+        text-align: center;
+    }
+
+    .about .row .content .button a {
+        width: 100%;
+    }
+
+    .about .row .content .button a:last-child {
+        margin: 1rem 0;
+    }
 }
 
 @media (max-width: 400px) {
