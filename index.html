@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoHogar</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+
+<body>
+
+    <!-- inicia header section -->
+
+    <header>
+        <a href="#" class="logo"><img src="images/versi_simbolo.svg" class="logo-img" alt="LOGO"></a>
+
+        <div id="menu-bar" class="fa-solid fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">Inicio</a>
+            <a href="#features">Características</a>
+            <a href="#about">Sobre Nosotros</a>
+            <a href="#contact">Contactanos</a>
+        </nav>
+    </header>
+
+    <!-- termina header section -->
+
+    <!-- seccion home inicia -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>TecnoHogar</h3>
+            <p>TecnoHogar es tu aplicación amiga que te permite escoger de un amplio catálogo de profesionales empíricos
+                y técnicos que
+                cumplen con estándares de calidad-experiencia de diversas áreas, electricistas, albañiles, fontaneros,
+                carpinteros y más, para realizar ese trabajo en tu hogar o negocio que tanto necesitas terminar.</p>
+            <a href="#" class="btn">Descargala Ya!</a>
+        </div>
+
+        <div class="swiper-container image-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/Screenshot_login.png" alt="login">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/Screenshot_registro.png" alt="registro">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/Screenshot_home.png" alt="home">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/Screenshot_perfil.png" alt="perfil">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/Screenshot_profesional.png" alt="profesional">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- seccion home termina -->
+
+    <!-- seccion features inicia -->
+
+    <section class="features" id="features">
+
+        <h1 class="heading">Caracteristicas de la aplicación</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-magic"></i>
+                <h3>Diseño Estilizado</h3>
+                <p>Prueba nuestra aplicación y descubre lo fácil y divertido que es utilizarla, esto gracias a
+                    interfaces amigables con el
+                    usuario para una experiencia fluida.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Protegemos tu privacidad</h3>
+                <p>La seguridad de nuestra aplicación cuenta con los dominios de google, al contratar los servicios de
+                    la base de datos de
+                    FireBase.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe"></i>
+                <h3>Idioma</h3>
+                <p>El lenguaje de nuestra aplicación es el idioma español para facilitar su comprensión ya que es uno de
+                    los idiomas más
+                    hablados.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Recomendaciones basadas en tu ubicación</h3>
+                <p>gracias a nuestra ubicación de gps se les recomendara a profesionales cerca de su área.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h3>Servicio de Atencion al Cliente</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aliquam! Possimus, magni ratione quasi
+                    debitis explicabo repellendus aliquam illum ab! Odio earum error quo, voluptatem repellendus
+                    similique?
+                    Veniam, animi necessitatibus.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- seccion features termina -->
+
+    <!-- seccion about inicia -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading">Sobre la App</h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="images/para_landingpage.png" alt="about">
+            </div>
+
+
+            <div class="content">
+                <h3>Echa un vistazo a nuestra aplicación</h3>
+                <p>Seremos tu aplicación móvil favorita en la búsqueda de profesionales técnicos y/o empíricos para
+                    realizar cualquier
+                    trabajo que necesites en tu hogar o trabajo.</p>
+                <div class="button">
+                    <a href="#"><img src="images/Google-Play-Store-Button_2.png" alt="playstore-btn"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- seccion about termina -->
+
+    <!-- scripts -->
+    <script src="js/swiper.min.js"></script>
+    <script>
+
+        var swiper = new Swiper(".image-slider", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+                slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+        });
+
+        let menu = document.querySelector('#menu-bar');
+        let navbar = document.querySelector('.navbar');
+
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('nav-toggle');
+        });
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('nav-toggle');
+        }
+    </script>
+
+</body>
+
+</html>
