@@ -216,6 +216,14 @@ header .navbar a:hover {
     flex-wrap: wrap;
 }
 
+.about .row .image .button a:hover {
+    opacity: .7;
+}
+
+
+.about .row .image .button a:last-child {
+    margin-left: 2rem;
+}
 
 
 
