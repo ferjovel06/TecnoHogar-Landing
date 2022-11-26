@@ -288,6 +288,10 @@ header .navbar a:hover {
     font-size: 2rem;
 }
 
+.footer .credit span {
+    color: var(--turquoise);
+}
+
 
 
 
