@@ -26,8 +26,8 @@
 }
 
 .logo-img {
-    height: 35%;
-    width: 35%;
+    height: 80%;
+    width: 80%;
 }
 
 html {
@@ -68,7 +68,7 @@ section {
 }
 
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -107,7 +107,7 @@ header .navbar a:hover {
 }
 
 .home .content {
-    padding-top: 12rem;
+    padding-top: 1rem;
     max-width: 70rem;
     margin: 0 auto;
 }
@@ -242,10 +242,6 @@ header .navbar a:hover {
 
     header {
         padding: 2rem 4%;
-    }
-
-    .home .content {
-        padding-top: 15rem;
     }
 
     section {
